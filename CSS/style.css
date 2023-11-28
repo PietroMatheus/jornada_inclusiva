@@ -1,0 +1,138 @@
+*{
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.main {
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.banner {
+    position: relative;
+    height: 50vh; 
+}
+  
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.texto-resumo h2{
+    margin-left: 60vh;
+    margin-right: 60vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-family: textoboldfont;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.introducao-titulo h2{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: textoboldfont;
+    text-align: center;
+}
+
+.introducao-titulo p{
+    font-size: 17px;
+    text-align: justify;
+    margin-left: 65px;
+    margin-right: 65px;
+    font-family: textoregularfont;
+    margin-bottom: 17px;
+    line-height: 25px;
+
+}
+
+.conteudo {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+.capa-topico {
+    margin-left: 65px;
+    margin-bottom: 15px;
+}
+  
+.capa-topico img {
+    width: 250px; 
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.capa-topico img:hover{
+    transform: scale(0.85);
+    transition: 0.3s;
+}
+
+.texto-dir {
+    flex: 1;
+    margin-right: 60px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    font-family: textoregularfont;
+    text-align: justify;
+    display: block;
+    line-height: 25px;
+}
+
+.texto-dir p{
+    font-size: 17px;
+    text-align: justify; 
+    display: block;
+    line-height: 25px;
+}
+
+.img-cont1{
+    margin-right: 65px; 
+    margin-left: 35px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    width: 350px; 
+    height: 350px;
+    object-fit: cover;
+}
+
+.img-cont2{
+    margin-right: 35px; 
+    margin-left: 65px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    width: 350px; 
+    height: 350px;
+    object-fit: cover;
+}
+
+.img-cont3{
+    margin-right: 35px; 
+    margin-left: 65px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    width: 350px; 
+    height: 350px;
+    object-fit: cover;
+}
+
+@font-face {
+    font-family: logofont;
+    src: url(Fontes/Forum-Regular.ttf);
+}
+
+@font-face {
+    font-family: textoboldfont;
+    src: url(Fontes/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: textoregularfont;
+    src: url(Fontes/Roboto-Regular.ttf);
+}

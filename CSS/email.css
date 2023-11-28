@@ -1,0 +1,51 @@
+*{
+	box-sizing: border-box;
+	font-family: textoregularfont;
+}
+
+.container{
+	width: 500px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	border-color: black;
+	margin-left: 20%;
+}
+.container input{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid #777777;
+	margin-bottom: 20px;
+	font-size: 16px;
+	outline: none;
+}
+.botaoenviar{
+	border: none !important;
+	cursor: pointer;
+	background-color: #32cd9c;
+	margin: 15px 0;
+	font-size: 16px;
+	width: 100%;
+	padding: 14px;
+}
+.botaoenviar:hover{
+	background-color: #1f7d5f;
+	color: white;
+}
+
+@font-face {
+    font-family: logofont;
+    src: url(Fontes/Forum-Regular.ttf);
+}
+
+@font-face {
+    font-family: textoboldfont;
+    src: url(Fontes/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: textoregularfont;
+    src: url(Fontes/Roboto-Regular.ttf);
+}

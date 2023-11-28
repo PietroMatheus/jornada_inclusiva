@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    position: relative; 
+    height: 18vh; 
+    width: 100%;
+    background-color: #130632;
+    max-height: 768px;
+
+}
+
+ .logo img{
+    width: 110px;
+    height: 110px;
+    margin-left: 1%;
+    top: 8px;
+    position: relative;
+ }
+
+
+.jornada{
+    font-size: 45px;
+    position: absolute;
+    top: 20px;
+    margin-left: 10%;
+    bottom: 0;
+    color: white;
+    font-family: logofont;
+
+}
+
+.inclusiva{
+    font-size: 45px;
+    position: absolute;
+    top: 65px;
+    margin-left: 15%;
+    bottom: 0;
+    color: white;
+    font-family: logofont;
+
+}
+
+#botao-sobre_nos {
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    margin-left: 65%;
+    z-index: 1;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao-sobre_nos:hover {
+    background-color: transparent;
+    transform: scale(1.3);
+  }
+
+#botao-artigos {
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    margin-left: 50%;
+    z-index: 1;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao-artigos:hover {
+    background-color: transparent;
+    transform: scale(1.3);
+  }
+
+#botao-inicio {
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    margin-left: 35%;
+    z-index: 1;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#botao-inicio:hover {
+    background-color: transparent;
+    transform: scale(1.3);
+}
+
+.footer {
+    position: relative; 
+    height: 20vh; 
+    width: 100%;
+    background-color: #130632;
+    margin-top: 50px;
+}
+
+.logoifc {
+    height: 100px;
+    width: 300px;
+    position: relative;
+    top: 20px;
+    bottom: 0;
+    margin-left: 10px;
+    left: 15px;
+}
+
+#botao-sobre_nos_footer {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    z-index: 1;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao-sobre_nos_footer:hover {
+    background-color: transparent;
+    transform: scale(1.3);
+  }
+
+#botao-artigos_footer {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 1;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao-artigos_footer:hover {
+    background-color: transparent;
+    transform: scale(1.3);
+  }
+
+#botao-inicio_footer {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#botao-inicio_footer:hover {
+    background-color: transparent;
+    transform: scale(1.3);
+}
+
+#voltarbotao {
+    display: hidden;
+    position: fixed; 
+    bottom: 20px;
+    right: 10px; 
+    z-index: 99;
+    border: none;
+    background-color: #743dfb; 
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 20vh;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+#voltarbotao:hover {
+    background-color: #555;
+}
+
+.divBusca{
+    background-color:#351a9f;
+    border:solid 1px;
+    border-radius:15px;
+    width:180px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 80%;
+}
+
+.icon-busca{
+    width: 30px;
+    float: right;
+}
+  
+.txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left: 7px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 140px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@font-face {
+    font-family: logofont;
+    src: url(Fontes/Forum-Regular.ttf);
+}
+
+@font-face {
+    font-family: textoboldfont;
+    src: url(Fontes/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: textoregularfont;
+    src: url(Fontes/Roboto-Regular.ttf);
+}

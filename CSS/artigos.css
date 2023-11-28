@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+}
+
+.main {
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.artigos-titulo h1{
+    text-align: center;
+    font-family: textoboldfont;
+    margin-top: 40px;
+    font-size: 30px;
+}
+.artigos-titulo h2{
+    text-align: center;
+    font-family: textoboldfont;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.sobre-o-artigo {
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: textoregularfont;
+    text-align: center;
+    line-height: 25px;
+ 
+}
+
+.sobre-o-artigo p{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: textoregularfont;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.conteudo {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    line-height: 25px;
+}
+
+.btn {
+    background-color: #743dfb;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #5b28dd;
+  }
+
+@font-face {
+    font-family: logofont;
+    src: url(Fontes/Forum-Regular.ttf);
+}
+
+@font-face {
+    font-family: textoboldfont;
+    src: url(Fontes/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: textoregularfont;
+    src: url(Fontes/Roboto-Regular.ttf);
+}
