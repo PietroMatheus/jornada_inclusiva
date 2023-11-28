@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>Jornada Inclusiva</title>
+
+<link rel="stylesheet" type="text/css"a href="CSS/artigos.css">
+<link rel="stylesheet" type="text/css"a href="CSS/header_footer.css">
+</head>
+
+<body>
+
+  <div class="header" id="header">
+    <div class="logo">
+        <img id="logo_site" src="CSS/Header/logonova.png" alt="Logo">
+    </div>
+    <div class="logo_texto">
+        <p class="jornada">Jornada</p>
+        <p class="inclusiva">Inclusiva</p>
+    </div>
+
+    <a href="index.html"><button id="botao-inicio">Inicial</button></a>
+    <a href="artigos.html"><button id="botao-artigos">Artigos</button></a>
+    <a href="sobre_nos.html"><button id="botao-sobre_nos">Sobre Nós</button></a>
+    <div class="divBusca">
+      <input type="text" class="txtBusca" placeholder="Buscar..."/>
+      <img src="Imagens/lupa.png" class="icon-busca" alt="Buscar"/>
+  </div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</div>   
+
+  <div class="main">
+      <div class="artigos-titulo">
+        <h1>Nosso Artigo</h1>
+    </div>
+    <div class="artigos-titulo">
+      <h2>Resumo</h2>
+    </div>
+    <div class="sobre-o-artigo">
+      <p>
+        O artigo aborda temas relacionados à inclusão de crianças com necessidades
+        especiais na educação infantil, entre eles estão as leis, a importância
+        dos pais na vida social destas crianças, as dificuldades encontradas tanto pelos
+        alunos quanto pelas unidades de ensino, entre outros temas. O artigo também
+        aborda que mesmo com as leis impostas ainda nos deparamos com a falta da
+        sensibilidade por parte do poder público e da sociedade no momento de inserir
+        essas crianças em ambiente escolar.
+      </p>
+
+      <div class="artigos-titulo">
+        <h2>Abstract</h2>
+      </div>
+      <div class="sobre-o-artigo">
+        <p>
+          The arcticle addresses topics related to the inclusion of children with
+          special needs in the early childhood education, including the laws, the importance
+          of the parents in the social life of these children, the difficulties that can
+          be found by the students, as teaching units, as well as other topics. The arcticle
+          also adresses that even with the laws imposed we still face the lack of sensibility
+          of the public authorities and the society when inserting these children in a
+          school environment.
+        </p>
+      <a href="Artigo_Inclusão_social___Crianças_com_necessidades_especiais_na_educação_infantil.pdf" download="Artigo Inclusão_social Crianças com Necessidades Especiais na Educação Infantil">
+        <button class="btn"><i class="fa fa-download"></i>Faça o Download</button>
+      </a>
+      </div>
+    </div>
+  </div> 
+  
+<div class="footer">
+  <div class="logoifc">
+      <img src="CSS/Footer/logoifc.png">
+  </div>
+  <a href="index.html"><button id="botao-inicio_footer">Inicial</button></a>
+  <a href="artigos.html"><button id="botao-artigos_footer">Artigos</button></a>
+  <a href="sobre_nos.html"><button id="botao-sobre_nos_footer">Sobre Nós</button></a>
+  <button onclick="topFunction()" id="voltarbotao" title="Voltar ao Início">Topo</button>
+    <script>
+      let botaotopo = document.getElementById("voltarbotao");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          botaotopo.style.display = "block";
+      } else {
+          botaotopo.style.display = "none";
+      }
+      }
+      function topFunction() {
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+</div>
+
+</body>
+
+
+</html>

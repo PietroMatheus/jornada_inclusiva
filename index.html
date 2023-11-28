@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>Jornada Inclusiva</title>
+
+<link rel="stylesheet" type="text/css"a href="CSS/style.css">
+<link rel="stylesheet" type="text/css"a href="CSS/header_footer.css">
+<script type="text/javascript" src="JS/fadein.js"></script>
+</head>
+
+<body>
+    
+    <div class="header" id="header">
+        <div class="logo">
+            <img id="logo_site" src="CSS/Header/logonova.png" alt="Logo">
+        </div>
+        <div class="logo_texto">
+            <p class="jornada">Jornada</p>
+            <p class="inclusiva">Inclusiva</p>
+        </div>
+
+        <a href="index.html"><button id="botao-inicio">Inicial</button></a>
+        <a href="artigos.html"><button id="botao-artigos">Artigos</button></a>
+        <a href="sobre_nos.html"><button id="botao-sobre_nos">Sobre Nós</button></a>
+        <div class="divBusca">
+            <input type="text" class="txtBusca" placeholder="Buscar..."/>
+            <img src="Imagens/lupa.png" class="icon-busca" alt="Buscar"/>
+        
+        </div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+        
+    </div>    
+
+    <div class="banner">
+        <img id="banner_background" src="CSS/Header/imagem3.jpg" alt="Banner">
+    <div>
+    <div class="main">
+        <div class="introducao-titulo">
+            <h2>Introdução</h2>
+            <p>O site irá abordar tópicos relacionados à inclusão de crianças com necessidades especiais
+                 que resultaram de um artigo feito através de um Projeto Integrador,
+                  realizado por alunos do Instituto Federal Catarinense - Campus Concórdia.</p>
+        </div>
+        <div class="texto-resumo">
+            <h2 id="topico">Nossos tópicos</h2> 
+        </div>
+        <div class="conteudo"> 
+            <div class="capa-topico">
+                <a href="conteudo1.html"><img src="Imagens/importancia-pais.png" alt="Imagem1"></a>
+            </div>
+            <div class="texto-dir">
+                <h3>Evolução das leis</h3>
+                <br>
+                <p>O Brasil evoluiu muito quando se trata de leis na educação especial,
+                    desde a Constituição Federal de 1824 até a promulgação de leis e diretrizes 
+                    mais atuais que regulamentam a educação de pessoas com deficiência. 
+                    Este texto apresenta informações desde a Constituição de 1824, 
+                    que já garantia o direito à educação para pessoas com deficiência, 
+                    passando pelas primeiras escolas para cegos e surdos, até a mais recente das promulgações.</p>
+            </div>
+        </div>
+
+        <div class="conteudo" id="conteudo2">
+            <div class="capa-topico">
+                <a href="conteudo2.html"><img src="Imagens/estrutura-instituicoes.png" alt="Imagem2"></a>
+            </div>
+            <div class="texto-dir">
+                <h3>Importância dos pais na educação de crianças com necessidades especiais</h3>
+                <br>
+                <p>A participação ativa dos pais na educação infantil, 
+                    especialmente no caso de crianças com necessidades especiais, 
+                    desempenha um papel fundamental e essencial na inclusão
+                    e também no desempenho de crianças com necessidades especiais. 
+                    Isso envolve além do apoio prático, o apoio emocional, 
+                    o que corrobora para um maior desenvolvimento das crianças.</p>
+            </div>
+        </div>
+
+        <div class="conteudo" id="conteudo3">
+            <div class="capa-topico">
+                <a href="conteudo3.html"><img src="Imagens/cadeirantefofo.jpg" alt="Imagem3"></a>
+            </div>
+            <div class="texto-dir">
+                <h3>Estrutura das instituições</h3>
+                <br>
+                <p>Poucas instituições de ensino possuem realmente estrutura necessária para graduar
+                    os professores adequadamente, ou seja, para que os professores tenham
+                    a formação adequada e saibam realmente como incluir as crianças 
+                    com necessidades especiais. Isso quer dizer que por muitas a inclusão
+                    não é feita adequadamente porque os professores não possuem a formação
+                    que eles deveriam ter.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logoifc">
+            <img src="CSS/Footer/logoifc.png">
+        </div>
+        <a href="index.html"><button id="botao-inicio_footer">Inicial</button></a>
+        <a href="artigos.html"><button id="botao-artigos_footer">Artigos</button></a>
+        <a href="sobre_nos.html"><button id="botao-sobre_nos_footer">Sobre Nós</button></a>
+
+        <button onclick="topFunction()" id="voltarbotao" title="Voltar ao Início">Topo</button>
+            <script>
+                let botaotopo = document.getElementById("voltarbotao");
+
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    botaotopo.style.display = "block";
+                } else {
+                    botaotopo.style.display = "none";
+                }
+                }
+                function topFunction() {
+                    document.documentElement.scrollTop = 0;
+                }
+                </script>
+
+
+
+    </div>
+
+</body>
+
+</html>

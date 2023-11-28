@@ -1,0 +1,112 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>Jornada Inclusiva</title>
+
+<link rel="stylesheet" type="text/css"a href="CSS/sobre-nos.css">
+<link rel="stylesheet" type="text/css"a href="CSS/header_footer.css">
+<link rel="stylesheet" type="text/css"a href="CSS/email.css">
+<script type="text/javascript" src="JS/emailjava.js"></script>
+<script type="text/javascript" src="JS/mascaraemail.js"></script>
+
+</head>
+
+<body>
+    
+    <div class="header" id="header">
+        <div class="logo">
+            <img id="logo_site" src="CSS/Header/logonova.png" alt="Logo">
+        </div>
+        <div class="logo_texto">
+            <p class="jornada">Jornada</p>
+            <p class="inclusiva">Inclusiva</p>
+        </div>
+
+        <a href="index.html"><button id="botao-inicio">Inicial</button></a>
+        <a href="artigos.html"><button id="botao-artigos">Artigos</button></a>
+        <a href="sobre_nos.html"><button id="botao-sobre_nos">Sobre Nós</button></a>
+        <div class="divBusca">
+            <input type="text" class="txtBusca" placeholder="Buscar..."/>
+            <img src="Imagens/lupa.png" class="icon-busca" alt="Buscar"/>
+        </div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+    </div>    
+
+    <div class="main">
+        <div class="sobre-nos-titulo">
+            <h2>Sobre Nós</h2>
+        </div>
+
+        <div class="sobre-nos-texto">
+            <p>Somos estudantes do Instituto Federal Catarinense - Campus Concórdia, 
+                estamos no primeiro ano do ensino médio integrado ao curso técnico em 
+                Informática para a internet. Este site é fruto de um projeto integrador 
+                que envolve conteúdos técnicos e matérias do ensino médio, como Educação 
+                física, artes,inglês, português e literatura, possui o objetivo de desenvolver 
+                um trabalho acadêmico e um website com alta qualidade técnica e científica. 
+                O Projeto integrador possui o tema gerador “Inclusão Social: atitudes, 
+                percepções e práticas” e o tema escolhido pelo grupo foi “Inclusão de crianças 
+                com deficiência na educação infantil”. </p>
+        </div>
+
+        <div class="sobre-nos-foto">
+            <img src="Imagens/pessoas.jpg">
+        </div>
+        <div class="container">
+            <h2>Contate-nos</h2>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="Nome" placeholder="Nome" name="Nome" required>
+                <input type="tel" id="Fone" placeholder="Fone" name="Fone" required maxlength="15" onkeyup="handlePhone(event)" >
+                <input type="E-mail" id="E-mail" placeholder="E-mail" name="E-mail" required>
+                <button type="submit" class="botaoenviar">Enviar!</button>
+            </form>
+        </div> 
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script src="https://smtpjs.com/v3/smtp.js">
+            </script>    
+    </div>    
+
+
+    <div class="footer">
+        <div class="logoifc">
+            <img src="CSS/Footer/logoifc.png">
+        </div>
+        <a href="index.html"><button id="botao-inicio_footer">Inicial</button></a>
+        <a href="artigos.html"><button id="botao-artigos_footer">Artigos</button></a>
+        <a href="sobre_nos.html"><button id="botao-sobre_nos_footer">Sobre Nós</button></a>
+        <button onclick="topFunction()" id="voltarbotao" title="Voltar ao Início">Topo</button>
+    </div>
+
+        <script>
+            let botaotopo = document.getElementById("voltarbotao");
+        
+            window.onscroll = function() {scrollFunction()};
+        
+            function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                botaotopo.style.display = "block";
+            } else {
+                botaotopo.style.display = "none";
+            }
+            }
+            function topFunction() {
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    
+</body>
+
+</html>

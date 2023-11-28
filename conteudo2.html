@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>Jornada Inclusiva</title>
+
+<link rel="stylesheet" type="text/css"a href="CSS/conteudo.css">
+<link rel="stylesheet" type="text/css"a href="CSS/header_footer.css">
+</head>
+
+<body>
+  <div class="header" id="header">
+    <div class="logo">
+        <img id="logo_site" src="CSS/Header/logonova.png" alt="Logo">
+    </div>
+    <div class="logo_texto">
+        <p class="jornada">Jornada</p>
+        <p class="inclusiva">Inclusiva</p>
+    </div>
+
+    <a href="index.html"><button id="botao-inicio">Inicial</button></a>
+    <a href="artigos.html"><button id="botao-artigos">Artigos</button></a>
+    <a href="sobre_nos.html"><button id="botao-sobre_nos">Sobre Nós</button></a>
+    <div class="divBusca">
+      <input type="text" class="txtBusca" placeholder="Buscar..."/>
+      <img src="Imagens/lupa.png" class="icon-busca" alt="Buscar"/>
+  </div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  </div>   
+
+  <div class="main">
+    <div class="topico-selecionado">
+      <h2>Importância dos pais na educação de crianças com necessidades especiais</h2>
+    </div>
+
+    <div class="conteudo">
+      <div class="texto-conteudo">
+        <p>
+          Ter pais que participam ativamente de sua vida é de suma 
+          importância para todas as crianças, mas principalmente das com 
+          necessidades especiais, pois essa participação tem importância 
+          fundamental na inclusão e no desenvolvimento dessas crianças em meio a 
+          sociedade. Além de tudo, os pais podem fornecer apoio prático e suporte emocional.
+        </p>
+        <br>
+
+        <p>
+          Os pais desempenham um papel central como os primeiros educadores de seus filhos, 
+          e essa influência é ainda mais significativa quando se trata de crianças 
+          com necessidades especiais. A sua participação ativa no processo educacional 
+          contribui para uma educação mais eficaz e adaptada às necessidades individuais 
+          de seus filhos. Isso pode incluir o acompanhamento das terapias e atividades, 
+          o estímulo ao aprendizado, a comunicação constante com os profissionais da 
+          educação e saúde, entre outros aspectos práticos.
+        </p>
+        <br>
+
+        <p>
+          Em relação ao apoio emocional, a presença dos pais faz com que 
+          as crianças se sintam acolhidas, mais seguras para demonstrar seus 
+          sentimentos, mais confiantes e motivadas a enfrentar seus desafios diários, 
+          ganhando mais autoestima e resiliência.
+        </p>
+        <br>
+
+        <p>
+          Não só a ajuda dos pais, mas a sua ajuda aliada com a dos professores 
+          é a peça chave para o sucesso na vida de uma criança que tem alguma necessidade. 
+          Neste trabalho, é possível criar um ambiente mais inclusivo e adaptado, 
+          onde as crianças podem prosperar. Essa colaboração entre a escola e o lar 
+          proporciona um suporte mais completo e personalizado para o desenvolvimento 
+          das crianças.
+        </p>
+        <br>
+
+        <p>
+          Em resumo, a participação ativa dos pais na educação de 
+          crianças com necessidades especiais é um fator determinante 
+          para o sucesso dessas crianças. Tanto o apoio prático quanto o 
+          emocional desempenham papéis complementares na construção de um 
+          ambiente que promove o desenvolvimento e a inclusão, capacitando 
+          as crianças a enfrentar os desafios que a vida possa apresentar. 
+          O amor, a compreensão e o envolvimento dos pais são ingredientes 
+          fundamentais na jornada de crescimento e aprendizado de seus filhos 
+          com necessidades especiais.
+        </p>
+      </div>
+      <div>
+        <img src="Imagens/estrutura-instituicoes-conteudo.png" alt="Imagem-conteudo1" class="img-cont">
+      </div>
+    </div>
+  </div>
+
+
+<div class="footer">
+  <div class="logoifc">
+      <img src="CSS/Footer/logoifc.png">
+  </div>
+  <a href="index.html"><button id="botao-inicio_footer">Inicial</button></a>
+  <a href="artigos.html"><button id="botao-artigos_footer">Artigos</button></a>
+  <a href="sobre_nos.html"><button id="botao-sobre_nos_footer">Sobre Nós</button></a>
+  <button onclick="topFunction()" id="voltarbotao" title="Voltar ao Início">Topo</button>
+    <script>
+      let botaotopo = document.getElementById("voltarbotao");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          botaotopo.style.display = "block";
+      } else {
+          botaotopo.style.display = "none";
+      }
+      }
+      function topFunction() {
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+</div>
+
+</body>
+
+
+</html>

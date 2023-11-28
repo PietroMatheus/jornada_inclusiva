@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>Jornada Inclusiva</title>
+
+<link rel="stylesheet" type="text/css"a href="CSS/conteudo.css">
+<link rel="stylesheet" type="text/css"a href="CSS/header_footer.css">
+</head>
+
+<body>
+  <div class="header" id="header">
+    <div class="logo">
+        <img id="logo_site" src="CSS/Header/logonova.png" alt="Logo">
+    </div>
+    <div class="logo_texto">
+        <p class="jornada">Jornada</p>
+        <p class="inclusiva">Inclusiva</p>
+    </div>
+
+    <a href="index.html"><button id="botao-inicio">Inicial</button></a>
+    <a href="artigos.html"><button id="botao-artigos">Artigos</button></a>
+    <a href="sobre_nos.html"><button id="botao-sobre_nos">Sobre Nós</button></a>
+    <div class="divBusca">
+      <input type="text" class="txtBusca" placeholder="Buscar..."/>
+      <img src="Imagens/lupa.png" class="icon-busca" alt="Buscar"/>
+  </div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  </div>   
+
+  <div class="main">
+    <div class="topico-selecionado">
+      <h2>Evolução das leis</h2>
+    </div>
+
+    <div class="conteudo">
+      <div class="texto-conteudo">
+        <p>
+          A evolução das leis da educação especial é um grande marco para sociedade e
+          para história do brasil, tendo em vista a mudança de pensamento e busca da
+          inclusão na educação por meio das leis. Na constituição de 1824 se iniciou
+          a inclusão das crianças com deficiência na educação, 
+          estabelecendo um ensino primário gratuito e reconhecendo
+          que a educação era para todos, mesmo assim essa inclusão era praticamente
+          inexistente. Só em 1854 com  o Decreto Imperial n. 1428,
+          assinado por D. Pedro II, foi fundada a primeira escola para cegos do país,
+          localizada no Rio de Janeiro, chamada Imperial Instituto de Meninos Cegos
+          e posteriormente recebeu o nome de Instituto Benjamin Constant,
+          mesmo com essa instituição criada, era algo muito restrito a poucas crianças.
+        </p>
+        <br>
+        <p>
+          Em 1930 a visão ultrapassada de que as crianças com deficiência deveriam
+          ser excluídas e não mereciam ser incluídas na sociedade,
+          mudou a partir dessa época, quando as pessoas começaram
+          a reconhecer pessoas com deficiência como pessoas,
+          e que mereciam ser incluídas na educação e na sociedade.
+        </p>
+        <br>
+
+        <p>
+          Um dos maiores marcos na constituição brasileira em relação à inclusão,
+          foi primeiramente em 1994, com a criação da Declaração Salamanca
+          em parceria com a UNESCO, que tinha como objetivo estabelecer
+          um conjunto de diretrizes para a formulação e reforma de políticas
+          e sistemas educacionais inclusivos. Posteriormente em 1996, foi estabelecida
+          a Lei de Diretrizes e Bases da Educação (LDB), que garantia a inclusão
+          de crianças na educação brasileira, chamada também de LDB 9.394/96,
+          essa lei determinava que a educação especial fosse garantida, 
+          também na rede de ensino regular, buscando a inclusão dos alunos nas classes de aula regular.
+        </p>
+        <br>
+
+        <p>
+          Em 2015 foi criada Lei Brasileira de Inclusão da Pessoa com Deficiência
+          (Lei nº 13.146), ou também Estatuto da Pessoa com Deficiência,
+          serviu como reforço dos direitos das pessoas com deficiência, 
+          deixando diretrizes claras sobre  inclusão em todos os setores da sociedade. 
+          Além disso, ela trouxe novos dispositivos legais que garantem  acesso, permanência 
+          e participação das pessoas com deficiência na educação, reforçando a importância da 
+          acessibilidade e da adaptação de recursos pedagógicos.
+        </p>
+        <br>
+
+        <p>
+          Com o passar dos anos, o Brasil fez avanços importantes nas regras 
+          que dizem respeito à educação especial. No começo, as leis separavam 
+          as pessoas com deficiência, mas agora a ideia é incluí-las. 
+          Garantir que todos tenham os mesmos direitos e oportunidades na educação 
+          é algo que ainda estamos trabalhando, mas as leis mais recentes são um grande 
+          passo nessa direção. Isso mostra que o Brasil está comprometido em garantir 
+          que todos possam estudar e ter a chance de alcançar seu potencial, não importa suas limitações.
+        </p>
+      </div>
+      <div>
+        <img src="Imagens/importancia-pais-conteudo.png" alt="Imagem-conteudo1" class="img-cont">
+      </div>
+    </div>
+  </div>
+
+
+<div class="footer">
+  <div class="logoifc">
+      <img src="CSS/Footer/logoifc.png">
+  </div>
+  <a href="index.html"><button id="botao-inicio_footer">Inicial</button></a>
+  <a href="artigos.html"><button id="botao-artigos_footer">Artigos</button></a>
+  <a href="sobre_nos.html"><button id="botao-sobre_nos_footer">Sobre Nós</button></a>
+  <button onclick="topFunction()" id="voltarbotao" title="Voltar ao Início">Topo</button>
+    <script>
+      let botaotopo = document.getElementById("voltarbotao");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          botaotopo.style.display = "block";
+      } else {
+          botaotopo.style.display = "none";
+      }
+      }
+      function topFunction() {
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+</div>
+
+</body>
+
+
+</html>
